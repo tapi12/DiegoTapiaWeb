@@ -1,0 +1,14 @@
+<div class="userInfo-content"><br><br><br><br><br><br>
+    <div class="userInfo-text"><br>
+        <div *ngIf="usuario">
+            <h2 style="font-family: 'Sixtyfour Convergence', sans-serif">Información del Usuario</h2>
+            <p><strong>Nombre:</strong> &nbsp;<span style="font-size:15px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:beige; ">{{ usuario.name }}</span></p>
+            <p><strong>Correo:</strong> &nbsp;<span style="font-size:15px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:beige">{{ usuario.email }}</span></p>
+          </div>
+          <div *ngIf="!usuario">
+            <p>No se encontró información del usuario.</p>
+          </div><br>
+        </div>
+    
+    
+</div>

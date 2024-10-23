@@ -1,0 +1,37 @@
+/* styles.scss o el archivo de estilos del componente */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Esto asegura que el contenedor ocupe al menos el 100% de la altura de la ventana */
+  }
+  
+  .main-content {
+    flex: 1; /* Esto permite que el contenido principal ocupe el espacio disponible */
+    padding: 20px; /* Espaciado opcional para el contenido */
+  }
+  
+  .spotifyPlayer{
+    position: fixed; 
+
+    width: 206px;
+    height: 300px;
+    padding-top: 180px;
+    padding-right: 8px;
+    opacity: 40%;
+    left: 100;
+    right: 0;
+    bottom:130px; /* Alineado en la parte inferior de la ventana */
+    top:40px;
+  }
+
+  .fixed-social-media {
+    position: fixed; /* O sticky si prefieres que se quede en su lugar */
+    bottom:-250px; /* Alineado en la parte inferior de la ventana */
+    left: 100; /* Alineado a la izquierda de la ventana */
+    right: 0; /* Alineado a la derecha de la ventana */
+    opacity: 30%;
+    padding: 8px; /* Espaciado opcional */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Sombra opcional */
+    z-index: 1000; /* Para asegurarte de que esté por encima de otros contenidos */
+  }
+  

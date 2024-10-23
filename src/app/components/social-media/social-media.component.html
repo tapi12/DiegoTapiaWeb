@@ -1,0 +1,8 @@
+<app-main-container>
+    <div class="social-media-container">
+        @for(socialMedia of socialMediaE; track socialMedia.name){
+            <app-social-media-element [socialMedia]="socialMedia"></app-social-media-element>
+        }
+    </div>
+</app-main-container>
+

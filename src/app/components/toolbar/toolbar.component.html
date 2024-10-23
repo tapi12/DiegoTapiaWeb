@@ -1,0 +1,51 @@
+
+<mat-toolbar class="custom-toolbar">
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>DTPH</span>
+  <span class="spacer"></span>
+  <button mat-icon-button [matMenuTriggerFor]="login" class="icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>person</mat-icon>
+  </button>
+   <app-menu ></app-menu>
+</mat-toolbar>
+
+<mat-menu #login="matMenu" class="custom-menu">
+  <button mat-menu-item  [routerLink] ="'/userInfo'">
+    <mat-icon class="red-icon">person</mat-icon>
+    <span class="red-text">User Info</span>
+  </button>
+  <button mat-menu-item  [routerLink] ="'/login'">
+    <mat-icon class="red-icon">login</mat-icon>
+    <span class="red-text">Login</span>
+  </button>
+  <button mat-menu-item  [routerLink] ="'/register'">
+    <mat-icon class="red-icon">person_add</mat-icon>
+    <span class="red-text">register</span>
+  </button>
+</mat-menu>
+
+<mat-menu #menu="matMenu" class="custom-menu">
+  <button mat-menu-item routerLink="/home">
+    <mat-icon class="red-icon">home</mat-icon>
+    <span class="red-text">Home</span>
+  </button>
+  <button mat-menu-item [routerLink] ="'/cv'">
+    <mat-icon class="red-icon">info</mat-icon>
+    <span class="red-text">CV</span>
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="menu2">
+    <mat-icon class="red-icon">contact_mail</mat-icon>
+    <span class="red-text">Contact</span>
+  </button>
+</mat-menu>
+
+<mat-menu #menu2="matMenu" class="custom-menu">
+  <button mat-menu-item routerLink="/home">
+    <img width="18" src="/assets/images/linkedInLogo.png" alt=" LinkedIn" class="red-icon" />
+    <span class="red-text">LinkedIn</span>
+  </button>
+  
+
+</mat-menu>

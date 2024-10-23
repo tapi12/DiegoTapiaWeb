@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+
+html, body { height: 100%; }
+body { 
+    margin: 0;
+     font-family: Roboto, "Helvetica Neue", sans-serif; 
+       background-image: url("assets/images/welcomeImage.jpg");
+       background-attachment: fixed; /* Esto hace que el fondo quede fijo al hacer scroll */
+       background-repeat: no-repeat; /* Evita que la imagen se repita */
+       background-position: center; /* Centra la imagen de fondo */
+       background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+       min-height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
+       width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho */
+       margin: 0; /* Elimina márgenes que puedan afectar la disposición */
+       padding: 0; /* Elimina rellenos */
+    }
+       
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

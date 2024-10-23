@@ -1,0 +1,15 @@
+<div class="login-container"><br><br>
+    <div class="loginStyle"><br>
+        <h2 style="font-family: 'Sixtyfour Convergence', sans-serif;">Inicio de sesion</h2>
+        <form (ngSubmit)="onSubmit()">
+            <label class="labelclass" for="email">Email:</label><br>
+            <input class="form-control" type="email" id="email" [(ngModel)]="email" name="email" required /><br><br>
+        
+            <label class="labelclass" for="password">Password:</label><br>
+            <input class="form-control" type="password" id="password" [(ngModel)]="password" name="password" required /><br>
+            <br>
+            <button class="button-class" type="submit">Login</button>
+        </form><br><br>
+    </div>
+    
+  </div>

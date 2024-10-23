@@ -1,0 +1,305 @@
+<div class="cv-content">
+    <button class="button-class" (click)="showInfo('main')">Main<br> &nbsp;</button>
+    <button class="button-class" (click)="showInfo('webDesign')">Web Design <br> and Development</button>
+    <button class="button-class" (click)="showInfo('programming')">Programming <br> Languages</button>
+    <button class="button-class" (click)="showInfo('databases')">Databases <br> &nbsp; </button>
+    <button class="button-class" (click)="showInfo('artificialIntelligence')">Artificial <br> Intelligence </button>
+    <button class="button-class" (click)="showInfo('tfg')">TFG <br> &nbsp; </button>
+    <button class="button-class" (click)="showInfo('qualityAssurance')"> Software Engineering <br>and Quality Assurance </button>
+    
+
+    
+    <div class="cv-text" *ngIf="selectedInfo === 'webDesign'">
+        <br>
+        <p class="tittle" style="font-size: 25px">Web Design and Development:</p>
+        <br>
+        <p style="font-size: 18px; color:rgb(255, 130, 130)"> Front-end: <br></p>
+            <ul>
+                <li style="margin-left: 40px;"><span style="color:rgb(255, 204, 204)">Angular:</span> Framework para construir aplicaciones web de una sola página (SPA).</li>
+                <li style="margin-left: 40px;"><span style="color:rgb(255, 204, 204)">Vue:</span> Framework progresivo para construir interfaces de usuario.</li>
+            </ul>
+        
+        <img style="margin-left: 100px;" width="40" src="/assets/images/angularLogo.png" />
+        <img style="margin-left: 10px;" width="40" src="/assets/images/vueLogo.png" />
+
+        <p style="font-size: 18px; color:rgb(255, 130, 130)"> Back-end: <br> </p>
+           
+        <ul>
+            <li style="margin-left: 40px;"><span style="color:rgb(255, 204, 204)">Flask:</span> Microframework para aplicaciones web en Python.</li>
+            <li style="margin-left: 40px;"><span style="color:rgb(255, 204, 204)">Django:</span> Framework de alto nivel para el desarrollo rápido de aplicaciones web en Python.</li>
+            <li style="margin-left: 40px;"><span style="color:rgb(255, 204, 204)">Node.js:</span> Entorno de ejecución para JavaScript en el lado del servidor, que permite construir aplicaciones web escalables y rápidas.</li>
+        </ul>
+
+        <img style="margin-left: 100px;" width="40" src="/assets/images/flaskLogo.png" />
+        <img style="margin-left: 10px;" width="50" src="/assets/images/djangoLogo.png" />
+        <img style="margin-left: 10px;" width="50" src="/assets/images/nodejsLogo.png" />
+
+        <p style="font-size: 18px; color:rgb(255, 130, 130)"> Full Stack: <br> </p>
+        <ul>
+            <li style="margin-left: 40px;"><span style="color:rgb(255, 204, 204)">Django + Vue</span></li>
+            <li style="margin-left: 40px;"><span style="color:rgb(255, 204, 204)">Node.js + Angular</span></li>
+        </ul>
+        <br>
+
+
+      </div>
+      <div class="cv-text" *ngIf="selectedInfo === 'programming'">
+        <br>
+        <p class="tittle" style="font-size: 25px">Programming Languages</p><br>
+        
+        <ul style="list-style: none; padding: 0;">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img width="80" src="/assets/images/CLogo.png" alt="C logo" title="Lenguaje C" />
+                <ul>
+                    <li>Memoria dinámica.</li>
+                    <li>Programación multihilo.</li>
+                    <li>Concurrencia.</li>
+                    <li>Diseño de servidores.</li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <ul style="list-style: none; padding: 0;">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img width="80" src="/assets/images/pythonLogo.png" alt="Python logo" title="Lenguaje Python" />
+                <ul>
+                    <li>Creación de programas cliente servidor.</li>
+                    <li>Implementación de sockets.</li>
+                    <li>Clasificación supervisada y no supervisada.</li>
+                    <li>Algoritmos de búsqueda y ordenación.</li>
+                    <li>Algoritmos genéticos.</li>
+                    <li>Manejo de librerías como pandas, matplotlib, numpy...</li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <ul style="list-style: none; padding: 0;">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img width="80" src="/assets/images/javaLogo.png" alt="Java logo" title="Lenguaje Java" />
+                <ul>
+                    <li>Análisis y diseño de software.</li>
+                    <li>Implementación de sockets.</li>
+                    <li>Habilidades para el desarrollo de diagramas de clases.</li>
+                    <li>Programación funcional (funciones lambda).</li>
+                    
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <ul style="list-style: none; padding: 0;">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img width="80" src="/assets/images/javaScriptLogo.png" alt="javaScript logo" title="Lenguaje JavaScript" />
+                <ul>
+                    <li>JSON.</li>
+                    <li>JQuery.</li>
+                    <li>Técnicas de actualización dinámica como AJAX.</li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <ul style="list-style: none; padding: 0;">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img width="80" src="/assets/images/htmlcssLogo.png" alt="HTML&CSS logo" title="Lenguaje HTML y CSS" />
+                <ul>
+                    <li>HTML5.</li>
+                    <li>CSS y SCSS.</li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <ul style="list-style: none; padding: 0;">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img width="80" src="/assets/images/typeScriptLogo.png" alt="TypeScript Logo" title="Lenguaje TypeScript" />
+                <ul>
+                    <li>Desarrollo web en Angular</li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <ul style="list-style: none; padding: 0;">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img width="80" src="/assets/images/csharpLogo.png" alt="CSharp Logo" title="Lenguaje CSharp" />
+                <ul>
+                    <li>Desarrollo en .Net</li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <ul style="list-style: none; padding: 0;">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img width="80" src="/assets/images/vhdlLogo.png" alt="VHDL logo" title="Lenguaje VHDL" />
+                <ul>
+                    <li>OpenMP.</li>
+                    <li>Simulación y desarrollo de procesador RISC-V.</li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+
+      </div>
+      <div class="cv-text" *ngIf="selectedInfo === 'databases'">
+        <br>
+        <p class="tittle" style="font-size: 25px">Databases:</p>
+        <br>
+        <p style="font-size: 18px; color:rgb(255, 130, 130)"> Bases de Datos relacionales (SQL): <br></p>
+            <ul>
+                <li style="margin-left: 40px;">Creación, actualización, consulta y eliminación de bases de datos.</li>
+                <li style="margin-left: 40px;"> Desarrollo de Funciones, Triggers y Procedimientos.</li>
+                <li style="margin-left: 40px;"> MySQL.</li>
+            </ul>
+
+        <p style="font-size: 18px; color:rgb(255, 130, 130)"> Bases de datos no relacionales: <br> </p>
+           
+        <ul>
+            <li style="margin-left: 40px;">MongoDB.</li>
+            <li style="margin-left: 40px;">Neo4j.</li>
+        </ul>
+        <br>
+
+      </div>
+      <div class="cv-text" *ngIf="selectedInfo === 'artificialIntelligence'">
+        <br>
+        <p class="tittle" style="font-size: 25px">Artificial Intelligence:</p>
+            <ul><br>
+                <li style="color:rgb(255, 130, 130)">Lógica de predicados.</li><br>
+                <li style="color:rgb(255, 130, 130)">Incertidumbre.</li><br>
+                <li style="color:rgb(255, 130, 130)">Algoritmos genéticos.</li><br>
+                <li style="color:rgb(255, 130, 130)">Desarrollo de modelos de Redes Neuronales.</li>
+                <ul>
+                    <li>Redes Convolucionales.</li>
+                    <li>YOLO.</li>
+                </ul><br>
+                <img width="300" src="/assets/images/redneuronal.png" title="Red Neuronal" />
+            </ul>
+        <br>
+      </div>
+      <div class="cv-text" *ngIf="selectedInfo === 'qualityAssurance'">
+        <br>
+        <p class="tittle" style="font-size: 25px">Software Engineering:</p><br>
+        <p style="font-family: 'Sixtyfour Convergence', sans-serif; font-size: 15px;" >Conocimientos adquiridos en cada fase del desarrollo software:</p>
+        <ul class="boxFase1">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <p class="tittleFases">Analisis de<br> requisitos</p><br>
+                <ul>
+                    <li>Requisitos Funcionales.</li>
+                    <li>Requisitos No Funcionales.</li>
+                    <li>Alcance del sistema, funcionalidades y limitaciones.</li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="boxFase2">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <p class="tittleFases">Diseño &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><br>
+                <ul>
+                    <li>Implementación de requisitos.</li>
+                    <li>Diseño de arquitectura, base de datos, interfaces de usuario, y diseño de componentes.</li>
+                    <li>Desarrollo de Diagramas, especificaciones detalladas del sistema y maquetas.</li>
+                    
+                </ul>
+            </li>
+        </ul>
+        <ul class="boxFase3">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <p class="tittleFases">Desarrollo&nbsp;</p><br>
+                <ul>
+                    <li>Codificación del software.</li>
+                    <li>Desarrollo de front end, back end, integraciones, etc.</li>                    
+                </ul>
+            </li>
+        </ul>
+        <ul class="boxFase4">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <p class="tittleFases">Pruebas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><br>
+                <ul>
+                    <li>Pruebas de integración, unitarias, funcionales. </li>
+                    <li>Identificación y corrección errores.</li>   
+                    <li>Caja Blanca y Caja Negra.</li>   
+                    <li>Realización de TestPlans.</li> 
+                    <li>Metodología de trabajo QA Tester.</li>     
+                    <li>Interaccion con el peticionario.</li>          
+                </ul>
+            </li>
+        </ul>
+        <ul class="boxFase5">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <p class="tittleFases">Despliegue</p><br>
+                <ul>
+                    <li>Instalar y configurar el software en el entorno de producción. </li>
+                    <li>Pruebas en el entorno real.</li>               
+                </ul>
+            </li>
+        </ul>
+        <ul class="boxFase6">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <p class="tittleFases">Manteni-<br>miento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><br>
+                <ul>
+                    <li>Desarrollo de mejoras y actualizaciones basados en el feedback de los usuarios </li>
+                    <li>Resolución de incidencias.</li>               
+                </ul>
+            </li>
+        </ul>
+
+        <br>
+      </div>
+      <div class="cv-text" *ngIf="selectedInfo === 'tfg'"><br>
+        <p class="tittle" style="font-size: 25px;">TFG: Reconocimiento de situaciones mediante modelos de inteligencia artificial</p>
+        <ul>
+            <li>Desarrollado en la Escuela Politécnica superior de la Universidad Autónoma de Madrid.</li><br>
+            <li>Entregado y defendido en el año 2024.</li><br>
+            <li>Conceptos Desarrollados:
+                <ul>
+                    <li>Redes Neuronales.</li>
+                    <li>Redes Convolucionales.</li>
+                    <li>Normalización.</li>
+                    <li>Funciones de activación.</li>
+                    <li>Funciones de pérdida.</li>
+                    <li>Técnicas para mitigar el sobreentrenamiento.</li>
+                    <li>Desarrollo de Datasets.</li>
+                    <li>Aumento de Datos.</li>
+                    <li>Validación cruzada.</li>
+                    <li>YOLO.</li>
+                    <li>Cuadros Delimitadores.</li>
+
+
+                </ul>
+            </li>
+        </ul>
+      </div>
+      <div class="cv-text" *ngIf="selectedInfo === null || selectedInfo === 'main'">
+        <br>
+        <p class="tittle" style="font-size: 25px">Sobre mi:</p>
+        <p>Ingeniero Informático con sólidos conocimientos en desarrollo de software, bases de datos,
+            ingeniería del software, inteligencia artificial y Quality Assurance. Con ganas de
+            incorporarme al mundo laboral para así crecer profesionalmente y contribuir
+            al éxito de proyectos tecnológicos.
+        </p>
+        <br>
+        <p class="tittle" style="font-size: 25px">Estudios:</p>
+        <p style="font-size: 20px;"><strong>Grado en Ingeniería informática.</strong><br></p>
+            <ul><p style="font-size: 13px;">Universidad Autónoma de Madrid 2018-2024 Madrid, España.</p></ul>
+        <p style="font-size: 20px;"><strong>Bachillerato de ciencias.</strong><br></p>
+            <ul><p style="font-size: 13px;">Colegio Internacional Pinosierra.</p></ul>
+        <br>
+        <p class="tittle" style="font-size: 25px">Experiencia Laboral:</p>
+        <p>Prácticas externas realizadas Newry Global Media S.L.
+            como QA Tester durante el año 2024.
+        </p>
+        <br>
+        <p class="tittle" style="font-size: 25px">Habilidades:</p>
+        <ul>
+            <li>Iniciativa.</li>
+            <li>Capacidad de adaptación.</li>
+            <li>Resolución de problemas </li>
+            <li>Trabajo en equipo.</li>
+        </ul>
+        <br>
+        <p class="tittle" style="font-size: 25px">Idiomas:</p>
+        <ul>
+            <li> Español: Nativo.</li>
+            <li>Ingles: Medio.</li>
+        </ul>
+
+        <br>
+      </div>
+
+
