@@ -1,0 +1,129 @@
+<div class="project-content">
+    <button class="button-class" (click)="showInfo('info')">Info<br> &nbsp;</button>
+    <button class="button-class" (click)="showInfo('inc1')">Primer Incremento<br> &nbsp;</button>
+    <button class="button-class" (click)="showInfo('inc2')">Segundo Incremento<br> &nbsp;</button>
+
+    <div class="project-text" *ngIf="selectedInfo === 'info' || selectedInfo === null">
+        <br>
+        <p class="tittle" style="font-size: 25px">Información del proyecto Web:</p><br>
+
+        <p class="tittle" style="font-size: 18px"> Resumen: <br></p>
+        <p>  Este proyecto es una versión a pequeña escala de una aplicación web 
+            Full-Stack. El front end está desarrollado utilizando Angular 17,
+             mientras que el back end se ha implementado en Node.js. Además,
+              la aplicación cuenta con una base de datos MySQL, que gestiona y 
+              almacena la información necesaria para su correcto funcionamiento.
+        </p><br>
+        <p class="tittle" style="font-size: 18px">Motivaciones:</p>
+        <p> El principal objetivo de este proyecto ha sido ampliar mis conocimientos en el
+             desarrollo de aplicaciones web. Comenzó como un ejercicio para aprender y mejorar
+              mis habilidades en Angular 17, pero tras un tiempo de estudio y práctica, decidí
+               expandir su alcance. Incorporé un componente de back end utilizando Node.js y una
+                base de datos MySQL, lo que me permitió estudiar y profundizar en los métodos de 
+                comunicación dentro de una aplicación web Full-Stack.
+        </p><br>
+        <p class="tittle" style="font-size: 18px">Repositorios GitHub del proyecto::</p>
+        <p>Front-end: <a href="https://github.com/tapi12/DiegoTapiaWeb" target="_blank">DiegoTapiaWeb</a>
+        </p>
+        <p>Back-end: <a a href="https://github.com/tapi12/APIDiegoTapiaWeb" target="_blank">APIDiegoTapiaWeb</a></p><br>
+    </div>
+
+    <div class="project-text" *ngIf="selectedInfo === 'inc1'"><br>
+        
+        <p class="tittle" style="font-size: 25px">Primer Incremento:</p><br>
+
+        <p class="tittle" style="font-size: 18px"> Configuracion y estructura: <br></p>
+        <p> En este primer incremento, realicé la configuración de la parte front-end de mi aplicación web. Posteriormente,
+             me familiaricé con la arquitectura de Angular 17 y sus modificaciones en comparación con versiones anteriores.<br><br>
+             Es importante destacar que Angular 17 permite el uso de componentes independientes (standalone components), 
+            lo que significa que el enrutamiento se puede gestionar directamente en el archivo app.routes.ts, sin necesidad
+             de definir módulos en la misma forma que se hacía en versiones anteriores.
+        </p><br>
+        <p>
+            Una vez que asimilé los conceptos de Angular, decidí estructurar de manera eficiente el directorio app. Para ello, creé 
+            un directorio llamado components, donde almaceno todos los componentes generados. Además, establecí un segundo directorio
+            llamado src, que a su vez contiene las carpetas directives, guards, layout, iframe-video y services. En cada una de estas
+            carpetas, se encuentran las directivas, guards, servicios, etc., organizados y separados según su uso específico y características.
+            Para facilitar las importaciones en las sub-carpetas de /src, generé un archivo index.ts por cada una de ellas.<br><br>
+            Finalmente, creé una carpeta assets al mismo nivel que la carpeta app, donde se almacenan todas las imágenes utilizadas en el proyecto.
+        </p><br>
+
+        <p class="tittle" style="font-size: 18px"> Diseño de Componentes: <br></p>
+        <p> Este primer incremento se enfoca en el desarrollo de dos vistas principales: welcome y cv. Para su implementación, fue necesario crear
+            algunos componentes adicionales, entre los cuales se encuentran toolbar y socialMedia. Estos componentes se cargarán siempre en la vista,
+            independientemente de la redirección, ya que desde el componente principal (app.component) he configurado el contenido de cada vista para que incluya un
+            toolbar, la ruta específica y el social media.            
+         </p>
+         <ul>
+            <li>
+                <p class="tittle" style="font-size: 16px"> Toolbar:</p>
+                <p>El componente "mat-toolbar" configura una barra de herramientas que he personalizado, incluye un botón de menú y un botón de usuario. El botón
+                     de menú, al hacer clic, despliega un menú donde se encuentran diferentes opciones de navegación, como "Home", "CV", "Project" y "Contact".
+                     <br><br>Cada opción está representada por un icono y un texto descriptivo, facilitando la navegación entre las distintas vistas de la aplicación. 
+                      Además, se ha integrado un segundo menú que permite acceder a las redes sociales. La barra de
+                       herramientas también incluye un espaciador que alinea adecuadamente los elementos, creando una interfaz de usuario ordenada y funcional.</p>
+            </li><br>
+            <li>
+                <p class="tittle" style="font-size: 16px"> Social-Media:</p>
+                <p>
+                    El componente "app-social-media" se encarga de mostrar los enlaces a mis redes sociales disponibles en la aplicación. Utiliza un arreglo de objetos
+                     que representan cada red social, he incluido su nombre, enlace y ruta de imagen correspondiente. Cada enlace se presenta mediante el componente
+                      "app-social-media-element", que muestra un icono de la red social, al hacer clic redirige al usuario a la página correspondiente en una nueva 
+                      pestaña.<br><br> En el componente principal he incluido un contenedor que organiza visualmente los elementos de redes sociales y utiliza la directiva wobble para 
+                      añadir un efecto de animación, mejorando así la interactividad y la experiencia del usuario.
+                </p>
+            </li><br>
+            <li>
+                <p class="tittle" style="font-size: 16px"> Welcome:</p>
+                <p>
+                    Este componente representa la vista por defecto de la web, donde se exhibe el nombre del proyecto junto con una presentación sobre el sitio. Además, 
+                    incorpora un efecto fadeIn que se activa al cargar el componente, proporcionando una transición suave y atractiva para el usuario.
+                </p><br>
+            </li>
+            <li>
+                <p class="tittle" style="font-size: 16px"> CV:</p>
+                <p>
+                    En esta vista, se puede consultar mi currículum completo, organizado en secciones. Para acceder a cada una de estas secciones, he desarrollado un conjunto
+                     de botones que, al pulsarse, muestran el contenido correspondiente. Para realzar esta funcionalidad, he utilizado la directiva *ngIf, de manera que el 
+                     contenido solo se mostrará si se cumple la condición establecida.<br><br> Además, si se pulsa dos veces el mismo botón, se mostrará el contenido por defecto, 
+                     es decir, la pestaña "Main".
+                </p>
+            </li>
+         </ul>
+        
+        
+    </div>
+
+    <div class="project-text" *ngIf="selectedInfo === 'inc2'"><br>
+        <p class="tittle" style="font-size: 25px">Segundo Incremento:</p><br>
+        <p class="tittle" style="font-size: 18px"> Full-Stack Web: <br></p>
+        <p>En este incremento, el objetivo principal es transformar la aplicación front-end en una aplicación Full-Stack, integrando la parte back-end con Node.js.
+             Tras iniciar el proyecto, decidí reestructurar los ficheros para mejorar la organización de la API y facilitar su escalabilidad.
+              <br><br>Para ello, he creado un directorio principal llamado "src", que incluye subcarpetas de "config", "controllers", "middlewares", 
+              "models" y "routes". Dentro de "routes", se han definido las rutas que se enlazarán con los controladores y serán llamadas desde la aplicación Angular.
+        </p><br>
+        <p class="tittle" style="font-size: 18px"> Base de datos MySQL: <br></p>
+        <p>
+            Uno de los principales objetivos al desarrollar una web Full-Stack es poder comunicarme con una base de datos a través de los controladores en la parte 
+            back-end. Esto permite realizar consultas, agregar nueva información e implementar sesiones. Para gestionar la base de datos, he utilizado MySQL y he 
+            creado una única tabla que almacena los nombres, correos electrónicos y contraseñas cifradas de los usuarios registrados en la web.
+        </p>
+        <br>
+        <p class="tittle" style="font-size: 18px"> Componentes y servicios de Usuarios:<br></p>
+        <p>
+            Volviendo al front-end, al gestionar sesiones es necesario crear las vistas correspondientes, como register y login, que permiten registrarse e iniciar 
+            sesión respectivamente. Cada una de estas vistas incluye un formulario donde los usuarios pueden ingresar sus datos para completar el registro o autenticarse
+             en la plataforma.<br><br>
+             Para el registro, el componente register.component contiene la lógica necesaria para verificar que el formulario esté completamente rellenado y que los 
+             campos sean válidos. Por ejemplo, comprueba que las contraseñas introducidas coincidan. Una vez validada esta información, el componente llama a los métodos 
+             correspondientes de Usuario.service. Estos métodos se comunican con el backend, donde los controladores aplican la lógica pertinente. En este caso, se verifica
+             que no exista una cuenta asociada al correo especificado y, de no ser así, otro controlador crea la cuenta.<br><br>
+             
+            
+            Por otro lado, el componente de registro llamará a UsuarioService, que se encargará de comunicarse con la API para verificar si el correo y la contraseña proporcionados son
+            correctos en comparación con los datos almacenados en la base de datos. Si la verificación es exitosa, la API enviará un token al Front-end para mantener activa la sesión. 
+            Para comprobar la sesión, he creado una nueva vista accesible desde el menú de usuario, llamada userInfo, que muestra el nombre y el correo del usuario en caso de que esté logueado.
+            
+        </p>
+    </div>
+</div>
