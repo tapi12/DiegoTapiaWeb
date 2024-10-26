@@ -1,0 +1,10 @@
+{
+  "routes": [
+    "/cv",
+    "/home",
+    "/login",
+    "/project",
+    "/register",
+    "/userInfo"
+  ]
+}
