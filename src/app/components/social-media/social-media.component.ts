@@ -16,12 +16,12 @@ export class SocialMediaComponent {
     {
       name: 'linkedIn',
       link: 'https://www.linkedin.com/in/diego-tapia-sánchez-b6688a291',
-      imgPath: '/assets/images/linkedInLogo.png'
+      imgPath: 'assets/images/linkedInLogo.png'
     },
     {
       name: 'GitHub',
       link: 'https://github.com/tapi12',
-      imgPath: '/assets/images/githubLogo.png'
+      imgPath: 'assets/images/githubLogo.png'
     }
   ]
 }
