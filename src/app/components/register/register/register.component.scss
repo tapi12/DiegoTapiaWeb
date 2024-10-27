@@ -28,3 +28,37 @@
 .labelclass{
     font-family: 'Sixtyfour Convergence', sans-serif;
 }
+
+@media (max-width: 768px) {
+    .register-container {
+        padding-right: 20px;  /* Reducido para ajustar a pantallas pequeñas */
+        padding-left: 20px;   /* Reducido para ajustar a pantallas pequeñas */
+    }
+
+    .registerStyle {
+        background: linear-gradient(
+            to bottom,
+            rgba(76, 80, 76, 0.0),
+            rgba(47, 48, 47, 0.7), /* Color en la parte superior con opacidad 0.2 */
+            rgba(76, 80, 76, 0.0)  /* Color en la parte inferior con opacidad 0.8 */
+        );
+        padding-right: 20px; /* Reducido para ajustarse mejor en móviles */
+        padding-left: 20px;  /* Reducido para ajustarse mejor en móviles */
+        color: rgb(249, 9, 9);
+    }
+
+    .button-class {
+        margin-right: 5px; /* Ajustado para más espacio en móviles */
+        margin-bottom: 8px; /* Ajustado para más espacio en móviles */
+        font-size: 13px; /* Ajusta el tamaño de fuente del botón */
+    }
+
+    .form-control {
+        width: 100%; /* Se mantiene el 100% para adaptarse bien al contenedor */
+        padding: 10px; /* Añadido padding para mejorar la usabilidad */
+    }
+
+    .labelclass {
+        font-size: 14px; /* Ajusta el tamaño de fuente para etiquetas */
+    }
+}
