@@ -112,3 +112,52 @@ p, ul{
     margin-right: 40px;
 }
 
+.pdf{
+    margin-left:40px;
+}
+
+
+@media (max-width: 768px) {
+    .button-class {
+        margin-right: 8px;
+        margin-bottom: 5px;
+        font-size: 10px;
+        background-color: rgba(60, 60, 60, 0.5);
+    }
+
+    .cv-content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cv-text {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .tittle {
+        font-size: 20px;
+    }
+
+    .tittleFases {
+        font-size: 18px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .boxFase1, .boxFase2, .boxFase3, .boxFase4, .boxFase5, .boxFase6 {
+        padding: 5px;
+        border-radius: 15px;
+    }
+
+    p, ul {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .pdf {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
