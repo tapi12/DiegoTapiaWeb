@@ -119,21 +119,20 @@ p, ul{
 
 @media (max-width: 768px) {
     .button-class {
-        margin-right: 32px;  /* Aumentar el margen derecho para mejor separación */
+        margin-right: 8px;
         margin-bottom: 5px;
-        font-size: 9px;       /* Reducción del tamaño de fuente */
-        padding: 10px 12px;     /* Ajustar el padding para que los botones sean más pequeños */
+        font-size: 10px;
         background-color: rgba(60, 60, 60, 0.5);
     }
 
     .cv-content {
-        margin-left: 10px;    /* Reducido para mayor espacio */
-        margin-right: 10px;   /* Reducido para mayor espacio */
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .cv-text {
         font-size: 14px;
-        padding: 8px;         /* Reducido para una mejor alineación */
+        padding: 10px;
     }
 
     .tittle {
@@ -161,5 +160,4 @@ p, ul{
         margin-right: 10px;
     }
 }
-
 
