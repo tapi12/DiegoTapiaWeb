@@ -3,7 +3,7 @@
   <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
-  <span style="font-size:12px">Web Diego Tapia</span>
+  <span style="font-size:20px">Web Diego Tapia</span>
   <span class="spacer"></span>
   <button mat-icon-button [matMenuTriggerFor]="login" class="icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>person</mat-icon>
@@ -11,7 +11,7 @@
    <app-menu ></app-menu>
 </mat-toolbar>
 
-<mat-menu #login="matMenu" class="custom-menu">
+<mat-menu #login="matMenu" class="custom-menu-user">
   <button mat-menu-item  [routerLink] ="'/userInfo'">
     <mat-icon class="red-icon">person</mat-icon>
     <span class="red-text">User Info</span>

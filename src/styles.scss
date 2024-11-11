@@ -6,7 +6,8 @@ html, body { height: 100%; }
 body { 
     margin: 0;
      font-family: Roboto, "Helvetica Neue", sans-serif; 
-       background-image: url("assets/images/welcomeImage.jpg");
+       //background-image: url("assets/images/welcomeImage.jpg");
+       background-image: url("assets/images/BackGroundDashboardBL.jpg");
        background-attachment: fixed; /* Esto hace que el fondo quede fijo al hacer scroll */
        background-repeat: no-repeat; /* Evita que la imagen se repita */
        background-position: center; /* Centra la imagen de fondo */

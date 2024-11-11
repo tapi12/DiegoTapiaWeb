@@ -1,30 +1,39 @@
 .button-class{
     margin-right:13px;
     margin-bottom:10px;
-    font-family: "Sixtyfour Convergence", sans-serif;
-    font-size: 12.89px;
-    background-color: rgba(60, 60, 60, 0.30);
-    color:rgb(253, 59, 59);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 19.2px;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(30, 32, 32,0.8),rgba(31, 30, 32, 0.6)) !important;  
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:rgb(255, 255, 255);
 }
+
 .cv-content {
     margin-left: 200px;
     margin-right: 200px;
 }
 
 .cv-text{
-    background: linear-gradient(
-    to bottom,
-    rgba(76, 80, 76, 0),  /* Color en la parte inferior con opacidad 0.8 */
-    rgba(47, 48, 47, 0.7), /* Color en la parte superior con opacidad 0.2 */
-    rgba(76, 80, 76, 0)  /* Color en la parte inferior con opacidad 0.8 */
-    );
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(30, 30, 32, 0.8),rgba(30, 30, 32, 0.6)) !important;  
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:rgb(255, 255, 255);
     
 }
 
 .tittle{
-    font-family: "Sixtyfour Convergence", sans-serif !important;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(255, 255, 255);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+    background: linear-gradient(to right, rgb(57, 0, 138),rgba(3, 0, 160, 0.8), rgba(12, 19, 44, 0), rgb(179, 1, 255,0));
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    margin-right: 76%;
+    padding: 10px;
+    border-radius:20px;
 }
 
 .tittleFases{
@@ -137,6 +146,7 @@ p, ul{
 
     .tittle {
         font-size: 20px;
+        margin-right: 42%;
     }
 
     .tittleFases {

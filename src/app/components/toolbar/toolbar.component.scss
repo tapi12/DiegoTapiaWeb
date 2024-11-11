@@ -1,15 +1,15 @@
 .custom-toolbar {
-  font-family: "Sixtyfour Convergence", sans-serif;
-  background: linear-gradient(
-    to bottom,
-    rgba(47, 48, 47, 0.7), /* Color en la parte superior con opacidad 0.2 */
-    rgba(76, 80, 76, 0.0)  /* Color en la parte inferior con opacidad 0.8 */
-  );
-  color: rgb(253, 59, 59);  /* Color del texto */
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: linear-gradient(to right, rgb(30, 32, 32),rgb(30, 32, 32,0.8), rgba(12, 19, 44, 0.8), rgb(179, 1, 255,0.5)) !important;  
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  width: '90%';
+  margin-top: '1.5%';
+  
 }
 
 .custom-toolbar .mat-icon {
-  color: rgb(253, 59, 59); /* Color de los íconos blanco */
+  color: rgb(202, 202, 202); /* Color de los íconos blanco */
 }
 
 .spacer {
@@ -17,21 +17,19 @@
 }
 
 .custom-menu {
+  border-radius: 40px;
   background-color: rgba(0, 2, 0,0) !important; /* Negro con 50% de transparencia */
-  background: linear-gradient(
-  to bottom,
-  rgba(76, 80, 76, 0.0),
-  rgba(47, 48, 47, 0.7), /* Color en la parte superior con opacidad 0.2 */
-  rgba(76, 80, 76, 0.0)  /* Color en la parte inferior con opacidad 0.8 */
-);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  
 }
 
 .red-icon {
-  color: rgb(253, 59, 59) !important; /* Cambia el color de los iconos a rojo */
+  color: rgb(243, 240, 240) !important; /* Cambia el color de los iconos a rojo */
 }
 
 .red-text {
-  font-family: "Sixtyfour Convergence", sans-serif;
-  font-size: 12px;
-  color: rgb(253, 59, 59); /* Cambia el color del texto a rojo */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(255, 254, 254); /* Cambia el color del texto a rojo */
 }
